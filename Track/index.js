@@ -1,10 +1,11 @@
 module.exports = async function (context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
     
-    if (req.body && req.body.url) {
+    if (req.body && req.body.url && req.body.fingerprint) {
         context.bindings.requests = [{
             PartitionKey: req.body.url,
             RowKey: context.bindingData.sys.randGuid,
+            fingerprint: req.body.fingerprint,
             navigator: JSON.stringify(req.body.navigator)
         }];
 
@@ -15,7 +16,7 @@ module.exports = async function (context, req) {
     else {
         context.res = {
             status: 400,
-            body: "POST request expected with a body that is a JSON object containing an url field."
+            body: "POST request expected with a body that is a JSON object containing an url and a fingerprint field."
         };
     }
 };
