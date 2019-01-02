@@ -1,0 +1,26 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "table",
+      "direction": "out",
+      "name": "requests",
+      "tableName": "Requests",
+      "connection": "adw1webanalytics_cs"
+    }
+  ]
+}
