@@ -2,6 +2,14 @@ POST http://localhost:7071/api/Track HTTP/1.1
 content-type: application/json
 
 {
-    "url": "foobar",
+    "url": "http://this.is.an.url?withQuery=bla",
+    "fingerprint": "blabla"
+}
+
+POST https://adw1webanalytics.azurewebsites.net/api/Track HTTP/1.1
+content-type: application/json
+
+{
+    "url": "http://this.is.an.url?withQuery=bla",
     "fingerprint": "blabla"
 }
