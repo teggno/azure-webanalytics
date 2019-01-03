@@ -1,0 +1,23 @@
+{
+  "name": "azure-webanalytics",
+  "version": "0.0.1",
+  "description": "Serverless web analytics running on azure tracking any kind of web page.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teggno/azure-webanalytics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teggno/azure-webanalytics/issues"
+  },
+  "homepage": "https://github.com/teggno/azure-webanalytics#readme",
+  "private": true,
+  "dependencies": {
+    "ramda": "^0.26.1"
+  }
+}

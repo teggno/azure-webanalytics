@@ -13,3 +13,5 @@ Page hits are stored in azure table storage.
 ## Notifications
 Get notified when traffic is increasing siginificantly. Goal is to not to have
 to go and check proactively.
+
+Daily notification with some stats.

@@ -1,0 +1,28 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "table",
+      "direction": "in",
+      "name": "hits",
+      "tableName": "Hits",
+      "filter": "PartitionKey ge '{start}' and PartitionKey le '{end}'",
+      "connection": "adw1webanalytics_cs"
+    }
+  ]
+}
