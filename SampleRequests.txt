@@ -24,3 +24,6 @@ content-type: application/json
 
 GET http://localhost:7071/api/PageViews?start=2019-01-01T10%3A08%3A16.432Z&end=2019-01-04T10%3A27%3A16.432Z HTTP/1.1
 content-type: application/json
+
+GET https://adw1webanalytics.azurewebsites.net/api/PageViews?start=2019-01-01T10%3A08%3A16.432Z&end=2019-01-04T10%3A27%3A16.432Z HTTP/1.1
+content-type: application/json
