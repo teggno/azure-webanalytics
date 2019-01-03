@@ -21,7 +21,7 @@
       "direction": "in",
       "name": "hits",
       "tableName": "Hits",
-      "filter": "PartitionKey ge '{start}' and PartitionKey le '{end}'",
+      "filter": "PartitionKey ge '{startUtc}' and PartitionKey le '{endUtc}'",
       "connection": "adw1webanalytics_cs"
     }
   ]

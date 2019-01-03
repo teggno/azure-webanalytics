@@ -1,7 +1,7 @@
 const R = require("ramda");
 
 module.exports = async function(context, req) {
-  // query string parameters start end end are expected and used in the table
+  // query string parameters startUtc and endUtc are expected and used in the table
   // binding
   const groupByUrl = R.groupBy(h => h.url);
   context.res = {
@@ -14,6 +14,9 @@ module.exports = async function(context, req) {
           groupByUrl(context.bindings.hits)
         )
       )
-    )
+    ),
+    headers: {
+      "Content-Type": "application/json"
+    }
   };
 };

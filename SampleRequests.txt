@@ -19,11 +19,11 @@ content-type: application/json
     "fingerprint": "blabla"
 }
 
-GET http://localhost:7071/api/PageViews?start=2019-01-03T10%3A08%3A16.432Z&end=2019-01-03T10%3A27%3A16.432Z HTTP/1.1
+GET http://localhost:7071/api/PageViews?startUtc=2019-01-02T18%3A09%3A21.769Z&endUtc=2019-01-03T18%3A09%3A21.769Z HTTP/1.1
 content-type: application/json
 
-GET http://localhost:7071/api/PageViews?start=2019-01-01T10%3A08%3A16.432Z&end=2019-01-04T10%3A27%3A16.432Z HTTP/1.1
+GET http://localhost:7071/api/PageViews?startUtc=2019-01-01T10%3A08%3A16.432Z&endUtc=2019-01-04T10%3A27%3A16.432Z HTTP/1.1
 content-type: application/json
 
-GET https://adw1webanalytics.azurewebsites.net/api/PageViews?start=2019-01-01T10%3A08%3A16.432Z&end=2019-01-04T10%3A27%3A16.432Z HTTP/1.1
+GET https://adw1webanalytics.azurewebsites.net/api/PageViews?startUtc=2019-01-01T10%3A08%3A16.432Z&endUtc=2019-01-04T10%3A27%3A16.432Z HTTP/1.1
 content-type: application/json
