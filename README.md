@@ -9,7 +9,13 @@ intended for tracking of any kind of **low traffic** web page.
   per page URL.
 
 ## Architecture
-azure-webanalytics runs on Azure functions. The functions are implemented in JavaScript.
+azure-webanalytics runs on Azure functions. The functions are implemented in
+JavaScript.
+
+## User interface
+A user interface to view the tracking data lives in the separate
+[azure-webanalytics-client](https://github.com/teggno/azure-webanalytics-client)
+repository.
 
 ## Roadmap
 - New HTTP GET endpoint to return daily/hourly total page views.
