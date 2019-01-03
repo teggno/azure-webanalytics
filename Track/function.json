@@ -18,8 +18,8 @@
     {
       "type": "table",
       "direction": "out",
-      "name": "requests",
-      "tableName": "Requests",
+      "name": "hits",
+      "tableName": "Hits",
       "connection": "adw1webanalytics_cs"
     }
   ]

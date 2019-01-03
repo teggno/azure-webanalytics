@@ -3,7 +3,12 @@ content-type: application/json
 
 {
     "url": "http://this.is.an.url?withQuery=bla",
-    "fingerprint": "blabla"
+    "referrer": "http://referrer",
+    "timestampUtc": "2018-02-12T17:10:00.000Z",
+    "fingerprint": "blabla",
+    "navigator": {
+        "userAgent": "baz"
+    }
 }
 
 POST https://adw1webanalytics.azurewebsites.net/api/Track HTTP/1.1
